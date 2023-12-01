@@ -19,7 +19,7 @@ if __name__ == '__main__':
     f_output_data.write(json.dumps(dict(os.environ), sort_keys=True, indent=4))
     f_output_data.close()
 
-    data = pd.read_csv('./data/input/my-input-csv-file.csv', low_memory=False)
+    data = pd.read_csv('{}/data/training/my-input-csv-file.csv'.format(os.environ['SM_INPUT_DIR']), low_memory=False)
     
     # metto a -1 gli score mancanti
     data = data.replace(np.nan, -1)
