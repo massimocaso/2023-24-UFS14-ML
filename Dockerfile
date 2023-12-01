@@ -1,5 +1,5 @@
 # SageMaker PyTorch image
-FROM 763104351884.dkr.ecr.us-east-1.amazonaws.com/pytorch-training:1.5.0-cpu-py3
+FROM 683313688378.dkr.ecr.us-east-1.amazonaws.com/sagemaker-scikit-learn:1.2-1-cpu-py3
 
 ENV PATH="/opt/ml/code:${PATH}"
 
